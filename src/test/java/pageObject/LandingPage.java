@@ -19,23 +19,38 @@ public class LandingPage extends BasePage{
 	public By searchButton = By.xpath("//*[@id='tabPanel4']/div/div/div/section/div/ul[1]/div/form/div[2]/button");
 	
 	public By title = By.xpath("/html/head/title/text()");
-	
-	
+
+
+	public By College = By.xpath("//*[@id=\'top-nav-menu\']/li[3]/div[1]/div/button");
+
+	public By ClickOn = By.xpath("//*[@id=\'app\']/div[2]/div[3]/main/section/section/div/div/div/ul/li/div[4]/a");
+
+
+	public By alertWind = By.cssSelector("#rclModal > button");
 	
 	public void wedNreg() {
 		clickOn(weedingAndgift);
 	}
 	
-	public void regiName(String name) {
+	public void regiName(String name)
+	{
 		enterData(regName, name);
 	}
 	
-	public void searchButton() {
+	public void searchButton()
+	{
 		clickOn(searchButton);
 	}
 	
+	public void clg (){
+		clickOn(College);
+	}
 	
-	
-	
+	public void clckon(){
+		clickOn(ClickOn);
+	}
+    public void alartWindow(){
+		clickOn(alertWind);
+	}
 }
     

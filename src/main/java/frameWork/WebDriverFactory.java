@@ -2,12 +2,12 @@ package frameWork;
 
 
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+
+import java.util.concurrent.TimeUnit;
 
 public class WebDriverFactory {
 
@@ -33,9 +33,9 @@ public class WebDriverFactory {
 	public void tearDown() throws InterruptedException {
 
 		if (driver != null) {
-			driver.manage().deleteAllCookies();
+			//driver.manage().deleteAllCookies();
 			 Thread.sleep(3000);
-			driver.quit();
+			//driver.quit();
 			//driver.switchTo().alert().accept(); // Accept ()method emulates the action of clicking OK / YES button
 			
 			//driver.switchTo().alert().dismiss(); // Dismiss () method emulates the action of clicking NO/ CANCEL button
